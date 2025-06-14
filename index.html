@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Cricket World</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    header {
+      background-color: #006400;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #f1f1f1;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 12px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #006400;
+      font-weight: bold;
+      padding: 8px 16px;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #006400;
+      color: white;
+      border-radius: 5px;
+    }
+
+    .hero {
+      background: url('https://images.unsplash.com/photo-1617281804083-98b942f99a76?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-shadow: 2px 2px 5px black;
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 30px 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h2 {
+      color: #006400;
+      margin-bottom: 15px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background-color: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #006400;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        font-size: 20px;
+        text-align: center;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Cricket World</h1>
+  </header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Teams</a>
+    <a href="#">Formats</a>
+    <a href="#">Legends</a>
+    <a href="#">News</a>
+  </nav>
+
+  <div class="hero">
+    The Spirit of Cricket Lives Here 🏏
+  </div>
+
+  <div class="container">
+
+    <section class="section">
+      <h2>Top Cricket Formats</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1597211452737-ec2f6a2f8941?auto=format&fit=crop&w=500&q=60" alt="Test">
+          <p><strong>Test Cricket</strong> – The oldest and most challenging format of the game.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1541921971-fcf3c3ed3df9?auto=format&fit=crop&w=500&q=60" alt="ODI">
+          <p><strong>ODI</strong> – One Day Internationals provide a balance between excitement and endurance.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1509191436522-0c1b2a9c9e1a?auto=format&fit=crop&w=500&q=60" alt="T20">
+          <p><strong>T20</strong> – Fast-paced, thrilling cricket format loved by the youth.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Cricket Legends</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="https://static.toiimg.com/thumb/msid-99384265,width-600,height-400,resizemode-75/99384265.jpg" alt="Sachin">
+          <p><strong>Sachin Tendulkar</strong> – The God of Cricket. Master Blaster of India.</p>
+        </div>
+        <div class="card">
+          <img src="https://static.toiimg.com/thumb/msid-104354956,imgsize-35484,width-400,resizemode-4/104354956.jpg" alt="Dhoni">
+          <p><strong>MS Dhoni</strong> – Captain Cool. The finisher and strategist.</p>
+        </div>
+        <div class="card">
+          <img src="https://images.news18.com/ibnlive/uploads/2024/04/virat-kohli-rcb-ipl-2024-2024-04-c70bbfc3c8ee2be9e8c16246d2d4f53e.jpg" alt="Virat">
+          <p><strong>Virat Kohli</strong> – King Kohli. Modern-day run machine and icon.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    © 2025 My Cricket World | Designed using HTML & CSS only
+  </footer>
+
+</body>
+</html>
